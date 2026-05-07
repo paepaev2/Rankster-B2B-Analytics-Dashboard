@@ -21,7 +21,7 @@ export function OverviewTab() {
   return (
     <div>
       {/* Key Metrics */}
-      <div className="grid grid-cols-4 gap-6 mb-8">
+      <div className="grid grid-cols-2 gap-6 mb-8">
         {/* <MetricCard
           label="Total Rankings"
           value="10,880"
