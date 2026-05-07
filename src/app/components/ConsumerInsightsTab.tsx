@@ -51,7 +51,7 @@ export function ConsumerInsightsTab() {
       </div>
 
       {/* Top vs Bottom */}
-      <div className="grid grid-cols-2 gap-6 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         {/* Top Ranked */}
         <div className="bg-white rounded-lg p-6 border border-[#e5e5e5] shadow-sm">
           <h3 className="mb-4 flex items-center gap-2">
@@ -111,7 +111,7 @@ export function ConsumerInsightsTab() {
       </div>
 
       {/* Preference Comparison */}
-      <div className="grid grid-cols-2 gap-6 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         <div className="bg-white rounded-lg p-8 border border-[#e5e5e5] shadow-sm">
           <div className="flex items-center gap-2 mb-6">
             <h3 className="text-[#1a1a1a] font-bold">Flavor Preference Breakdown</h3>

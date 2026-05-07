@@ -34,7 +34,7 @@ export function TrendsTab() {
         <div className="flex items-center gap-2 mb-4">
           <h2 className="text-[#1a1a1a] font-bold">Trending Ranking Topics</h2>
         </div>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {[
             { topic: 'Spicy Foods', change: 25 },
             { topic: 'International Flavors', change: 21 },
@@ -72,7 +72,7 @@ export function TrendsTab() {
       </div>
 
       {/* Detailed Lists */}
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Rising */}
         <div className="bg-white rounded-lg p-6 border border-[#e5e5e5] shadow-sm">
           <h3 className="mb-4 flex items-center gap-2">

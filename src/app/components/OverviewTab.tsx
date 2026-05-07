@@ -62,7 +62,7 @@ export function OverviewTab() {
         <div className="flex items-center gap-2 mb-4">
           <h2 className="text-[#1a1a1a] font-bold">Trending Ranking Topics</h2>
         </div>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {[
             { topic: 'Spicy Foods', change: 25 },
             { topic: 'International Flavors', change: 21 },
@@ -96,7 +96,7 @@ export function OverviewTab() {
           <h2 className="text-[#1a1a1a] font-bold">Quick Insights</h2>
           <span className="px-3 py-1 rounded-md bg-[#0058A3] text-white text-xs font-bold uppercase tracking-wide">AI Powered</span>
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <InsightCard
             insight="Your category engagement is 23% higher than industry average, driven by active ranker segment."
             impact="high"

@@ -54,7 +54,7 @@ export function AudienceTab() {
         <div className="flex items-center gap-2 mb-4">
           <h2 className="text-[#1a1a1a] font-bold">User Demographics</h2>
         </div>
-        <div className="grid grid-cols-2 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {/* Age Distribution */}
           <div className="bg-white rounded-lg p-8 border border-[#e5e5e5] shadow-sm">
             <h3 className="mb-6 text-[#1a1a1a] font-bold">Age Distribution</h3>
@@ -124,7 +124,7 @@ export function AudienceTab() {
         <div className="flex items-center gap-2 mb-4">
           <h2 className="text-[#1a1a1a] font-bold">User Segmentation</h2>
         </div>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {segmentData.map((segment, i) => {
             const Icon = segment.icon;
             return (
@@ -172,7 +172,7 @@ export function AudienceTab() {
         <div className="flex items-center gap-2 mb-6">
           <h3 className="text-[#1a1a1a] font-bold">Behavioral Insights by Segment</h3>
         </div>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="p-5 rounded-lg bg-[#FFFBF0] border-2 border-[#FFDA1A]">
             <div className="flex items-center gap-2 mb-3">
               <p className="text-sm text-[#666666] font-bold uppercase tracking-wide">Power Users</p>

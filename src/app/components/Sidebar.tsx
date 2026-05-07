@@ -3,9 +3,11 @@ import { BarChart3, TrendingUp, Lightbulb, Users, FileText } from 'lucide-react'
 interface SidebarProps {
   activeTab: string;
   onTabChange: (tab: string) => void;
+  isOpen: boolean;
+  onClose: () => void;
 }
 
-export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
+export function Sidebar({ activeTab, onTabChange, isOpen, onClose }: SidebarProps) {
   const navItems = [
     { id: 'overview', label: 'Overview', icon: BarChart3 },
     // { id: 'trends', label: 'Trends', icon: TrendingUp },
@@ -15,7 +17,14 @@ export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
   ];
 
   return (
-    <div className="w-64 h-screen bg-white border-r border-[#e5e5e5] flex flex-col">
+    <div
+      className={[
+        'fixed md:static inset-y-0 left-0 z-50',
+        'w-64 h-screen bg-white border-r border-[#e5e5e5] flex flex-col',
+        'transition-transform duration-300 ease-in-out',
+        isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0',
+      ].join(' ')}
+    >
       <div className="p-6 pb-8">
         <div className="flex items-center gap-2 mb-1">
           <div className="w-8 h-8 rounded-lg bg-[#0058A3] flex items-center justify-center">
@@ -56,7 +65,7 @@ export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
       <div className="p-4 m-3 rounded-lg bg-[#f5f5f5] border border-[#e5e5e5]">
         <div className="text-xs">
           <p className="text-[#666666] mb-1 font-medium">Last updated</p>
-          <p className="text-[#1a1a1a] font-semibold">Apr 10, 2026 • 2:34 PM</p>
+          <p className="text-[#1a1a1a] font-semibold">May 7, 2026 • 2:34 PM</p>
         </div>
       </div>
     </div>

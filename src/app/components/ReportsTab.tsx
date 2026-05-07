@@ -56,7 +56,7 @@ export function ReportsTab() {
         <div className="flex items-center gap-2 mb-4">
           <h3 className="text-[#1a1a1a] font-bold">Key Findings</h3>
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <InsightCard
             insight="Users say they prefer healthy food, but rankings show 36% lower actual preference. Actions speak louder than words."
             impact="high"
@@ -128,7 +128,7 @@ export function ReportsTab() {
         <div className="flex items-center gap-2 mb-4">
           <h3 className="text-[#1a1a1a] font-bold">Available Reports</h3>
         </div>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {[
             { title: 'Weekly Analytics Summary', date: 'Apr 3 - Apr 10, 2026' },
             { title: 'Monthly Trends Report', date: 'March 2026' },
